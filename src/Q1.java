@@ -1,4 +1,4 @@
-public class Main {
+public class Q1 {
     static String firstName;
     static String lastName;
     static int age;
@@ -20,7 +20,7 @@ public class Main {
 
     }
     public static void main(String[] args) {
-        Main.print_details();
+        Q1.print_details();
         System.out.println("Printing Details using static variable");
 
         System.out.println("First Name: " + firstName);
