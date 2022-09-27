@@ -10,16 +10,30 @@ public class Q5 {
         this.designation = "Software Engineer";
     }
     Q5(String firstname, String lastname, int age, String designation) {
+        this(lastname,age,designation);
         this.firstname = firstname;
-        this.lastname = lastname;
+
+    }
+    Q5(String lastname, int age, String designation){
+    this(age,designation);
+    this.lastname =lastname;
+    }
+
+    Q5(int age, String designation){
+       this(designation);
         this.age = age;
+
+    }
+    Q5(String designation){
         this.designation = designation;
     }
+
+
     public void setFirstName(String firstName) {
         this.firstname = firstName;
     }
-    public void setLastName(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastname = lastName;
     }
     public void setAge(int age) {
         this.age = age;
@@ -29,7 +43,8 @@ public class Q5 {
     }
     @Override
     public String toString() {
-        return "First Name : " + firstname + " Last Name: " + lastname + " Age : " + age + " Designation : " + designation;
+        return "First Name : " + firstname + " Last Name: " +
+                lastname + " Age : " + age + " Designation : " + designation;
     }
     public static void main(String[] args) {
         Q5 obj1 = new Q5();
